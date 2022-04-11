@@ -1,0 +1,7 @@
+#YAML
+DB:
+  DATABASE: 'postgres'
+  USER: 'postgres'
+  PASSWORD: '0196'
+  HOST: '127.0.0.1'
+  PORT: '5432'

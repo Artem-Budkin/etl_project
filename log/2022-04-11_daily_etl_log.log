@@ -1,0 +1,6 @@
+[2022-04-11 13:36:04,613 | INFO]: =========== Script launch C:\Doc\pythonProject\daily_etl.py ===========
+[2022-04-11 13:36:04,613 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> get_dates]   make dates start and end
+[2022-04-11 13:36:04,613 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> get_dates]   make dates start and end
+[2022-04-11 13:36:05,312 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> request_from_service]   create df from request service(event)
+[2022-04-11 13:36:05,407 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> write_to_postgres]   write data in postgres
+[2022-04-11 13:36:05,407 | INFO]: =========== Script end C:\Doc\pythonProject\daily_etl.py ===========
