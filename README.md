@@ -9,3 +9,4 @@ ETL project (parsing information, writing to the database)
 Папка query содержит запросы по заданию 3 в файле query_sql (SQL_1_date_city, SQL_2_date_device, SQL_3_city_device).
 Папка db_dump содержит дамп базы данных по скрипту iter_date_range_download.py (с 08.03.2022 - по настоящее время).
 В папку log сохраняются логи.
+Папка draft для чернового варианта загрузки
