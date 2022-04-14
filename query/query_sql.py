@@ -1,11 +1,13 @@
 import psycopg2
 import yaml
+import os
+from pathlib import Path
 
-# todo change path
-path_setting = 'C:\\Doc\\pythonProject'  # change path to setting.yaml
+
+path_setting = os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..'))
 setting = 'setting.yaml'
-
-with open(f'{path_setting}\\{setting}', encoding='utf-8') as f:
+path_setting = Path(path_setting, setting)
+with open(f'{path_setting}', encoding='utf-8') as f:
     setting = yaml.safe_load(f)
 
 database_postgres = setting['DB']['DATABASE']
