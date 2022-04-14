@@ -1,22 +1,23 @@
 import requests
+import time
 import pandas as pd
 from datetime import timedelta, date, datetime
 import psycopg2
 import yaml
 import logging
+from pathlib import Path
 
-path_log = 'C:\\Doc\\pythonProject\\log\\'
+
 time_log = datetime.now().strftime("%Y-%m-%d")
-
-logging.basicConfig(level=logging.INFO, filename=f'{path_log}{time_log}_iter_date_range_log.log',
+path_log = Path("logs", time_log + "_iter_date_range_log.log")
+logging.basicConfig(level=logging.INFO, filename=f'{path_log}',
                     format='[%(asctime)s | %(levelname)s]: %(message)s')
 logger = logging.getLogger()
 logger.info(f'=========== Script launch {__file__} ===========')
 
-path_setting = 'C:\\Doc\\pythonProject'  # change path to setting.yaml
 setting = 'setting.yaml'
 
-with open(f'{path_setting}\\{setting}', encoding='utf-8') as f:
+with open(f'{setting}', encoding='utf-8') as f:
     setting = yaml.safe_load(f)
 
 database_postgres = setting['DB']['DATABASE']
@@ -115,10 +116,12 @@ def write_to_postgres():
 
 
 if __name__ == '__main__':
+    start = time.time()
     write_to_postgres()
     con.close()
     print('Database close')
-
+    end = time.time()
     logging.info(f'=========== Script end {__file__} ===========')
+    print((end - start), "sec")
 
 
