@@ -64,7 +64,7 @@ def write_to_postgres():
     con = psycopg2.connect(
         database="postgres",
         user="postgres",
-        password="0196",  # change for work
+        password="0196",
         host="127.0.0.1",
         port="5432"
     )
