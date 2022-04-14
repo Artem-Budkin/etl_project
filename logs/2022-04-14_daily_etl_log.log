@@ -1,0 +1,48 @@
+[2022-04-14 16:02:52,066 | INFO]: =========== Script launch C:\Doc\pythonProject\daily_etl.py ===========
+[2022-04-14 16:02:52,066 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> get_dates]   make dates start and end
+[2022-04-14 16:02:52,066 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> get_dates]   make dates start and end
+[2022-04-14 16:02:52,801 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> request_from_service]   create df from request service(event)
+[2022-04-14 16:02:52,990 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> write_to_postgres]   write data in postgres
+[2022-04-14 16:02:52,990 | INFO]: =========== Script end C:\Doc\pythonProject\daily_etl.py ===========
+[2022-04-14 16:05:10,439 | INFO]: =========== Script launch C:\Doc\pythonProject\daily_etl.py ===========
+[2022-04-14 16:05:10,440 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> get_dates]   make dates start and end
+[2022-04-14 16:05:10,440 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> get_dates]   make dates start and end
+[2022-04-14 16:05:11,183 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> request_from_service]   create df from request service(event)
+[2022-04-14 16:05:11,467 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> write_to_postgres]   write data in postgres
+[2022-04-14 16:05:11,467 | INFO]: =========== Script end C:\Doc\pythonProject\daily_etl.py ===========
+[2022-04-14 16:11:31,040 | INFO]: =========== Script launch C:\Doc\pythonProject\daily_etl.py ===========
+[2022-04-14 16:11:31,040 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> get_dates]   make dates start and end
+[2022-04-14 16:11:31,040 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> get_dates]   make dates start and end
+[2022-04-14 16:11:31,820 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> request_from_service]   create df from request service(event)
+[2022-04-14 16:11:31,998 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> write_to_postgres]   write data in postgres
+[2022-04-14 16:11:31,998 | INFO]: =========== Script end C:\Doc\pythonProject\daily_etl.py ===========
+[2022-04-14 16:13:03,265 | INFO]: =========== Script launch C:\Doc\pythonProject\daily_etl.py ===========
+[2022-04-14 16:13:03,265 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> get_dates]   make dates start and end
+[2022-04-14 16:13:03,265 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> get_dates]   make dates start and end
+[2022-04-14 16:13:03,999 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> request_from_service]   create df from request service(event)
+[2022-04-14 16:13:04,188 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> write_to_postgres]   write data in postgres
+[2022-04-14 16:13:04,189 | INFO]: =========== Script end C:\Doc\pythonProject\daily_etl.py ===========
+[2022-04-14 16:13:15,132 | INFO]: =========== Script launch C:\Doc\pythonProject\daily_etl.py ===========
+[2022-04-14 16:13:15,132 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> get_dates]   make dates start and end
+[2022-04-14 16:13:15,132 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> get_dates]   make dates start and end
+[2022-04-14 16:13:15,874 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> request_from_service]   create df from request service(event)
+[2022-04-14 16:13:16,054 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> write_to_postgres]   write data in postgres
+[2022-04-14 16:13:16,055 | INFO]: =========== Script end C:\Doc\pythonProject\daily_etl.py ===========
+[2022-04-14 16:14:45,673 | INFO]: =========== Script launch C:\Doc\pythonProject\daily_etl.py ===========
+[2022-04-14 16:14:45,673 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> get_dates]   make dates start and end
+[2022-04-14 16:14:45,674 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> get_dates]   make dates start and end
+[2022-04-14 16:14:46,454 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> request_from_service]   create df from request service(event)
+[2022-04-14 16:14:46,656 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> write_to_postgres]   write data in postgres
+[2022-04-14 16:14:46,656 | INFO]: =========== Script end C:\Doc\pythonProject\daily_etl.py ===========
+[2022-04-14 16:37:48,316 | INFO]: =========== Script launch C:\Doc\pythonProject\daily_etl.py ===========
+[2022-04-14 16:37:48,316 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> get_dates]   make dates start and end
+[2022-04-14 16:37:48,316 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> get_dates]   make dates start and end
+[2022-04-14 16:37:49,051 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> request_from_service]   create df from request service(event)
+[2022-04-14 16:37:49,329 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> write_to_postgres]   write data in postgres
+[2022-04-14 16:37:49,329 | INFO]: =========== Script end C:\Doc\pythonProject\daily_etl.py ===========
+[2022-04-14 16:37:58,344 | INFO]: =========== Script launch C:\Doc\pythonProject\daily_etl.py ===========
+[2022-04-14 16:37:58,345 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> get_dates]   make dates start and end
+[2022-04-14 16:37:58,345 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> get_dates]   make dates start and end
+[2022-04-14 16:37:59,084 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> request_from_service]   create df from request service(event)
+[2022-04-14 16:37:59,263 | INFO]: [C:\Doc\pythonProject\daily_etl.py --> write_to_postgres]   write data in postgres
+[2022-04-14 16:37:59,263 | INFO]: =========== Script end C:\Doc\pythonProject\daily_etl.py ===========
