@@ -72,7 +72,7 @@ def write_to_postgres():
     write data from request "requests_by_day" in postgres database
     """
     df = request_from_service()
-    con = psycopg2.connect(   # change for work
+    con = psycopg2.connect(
         database="postgres",
         user="postgres",
         password="0196",
