@@ -1,7 +1,7 @@
 import psycopg2
 import yaml
 
-
+# todo change path
 path_setting = 'C:\\Doc\\pythonProject'  # change path to setting.yaml
 setting = 'setting.yaml'
 
@@ -48,22 +48,6 @@ def create_table_sql():
 
 
 # create_table_sql()
-
-create_table_sql_ =  """
- CREATE TABLE event(
-      "index" SERIAL PRIMARY KEY NOT NULL,
-      "city" VARCHAR(40) NOT NULL,
-      "date" DATE NOT NULL,
-      "device" VARCHAR(30) NOT NULL,
-      "user" VARCHAR(20) NOT NULL
-  )
-  """
-
-insert_table_sql = """
-INSERT INTO event (city, date, device, "user")
-     VALUES('%s','%s','%s','%s')
-"""
-
 
 # Part SQL query
 SQL_1_date_city = """
