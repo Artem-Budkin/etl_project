@@ -5,6 +5,7 @@ import requests
 from airflow.models import DAG
 from airflow.operators.python import PythonOperator
 import logging
+from pathlib import Path
 
 
 # args for airflow
@@ -17,11 +18,9 @@ args = {
     'schedule_interval': '@daily',
 }
 
-
-path_log = 'C:\\Doc\\pythonProject\\log\\'
 time_log = datetime.now().strftime("%Y-%m-%d")
-
-logging.basicConfig(level=logging.INFO, filename=f'{path_log}{time_log}_airflow_etl_log.log',
+path_log = Path("logs", time_log + "_airflow_etl_log.log")
+logging.basicConfig(level=logging.INFO, filename=f'{path_log}',
                     format='[%(asctime)s | %(levelname)s]: %(message)s')
 logger = logging.getLogger()
 logger.info(f'=========== Script launch {__file__} ===========')
@@ -73,10 +72,10 @@ def write_to_postgres():
     write data from request "requests_by_day" in postgres database
     """
     df = request_from_service()
-    con = psycopg2.connect(
+    con = psycopg2.connect(   # change for work
         database="postgres",
         user="postgres",
-        password="0196",  # change for work
+        password="0196",
         host="127.0.0.1",
         port="5432"
     )
