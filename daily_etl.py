@@ -2,13 +2,14 @@ import requests
 import pandas as pd
 import psycopg2
 from datetime import datetime, timedelta
+import time
 import logging
+from pathlib import Path
 
 
-path_log = 'C:\\Doc\\pythonProject\\log\\'
 time_log = datetime.now().strftime("%Y-%m-%d")
-
-logging.basicConfig(level=logging.INFO, filename=f'{path_log}{time_log}_daily_etl_log.log',
+path_log = Path("logs", time_log + "_daily_etl_log.log")
+logging.basicConfig(level=logging.INFO, filename=f'{path_log}',
                     format='[%(asctime)s | %(levelname)s]: %(message)s')
 logger = logging.getLogger()
 logger.info(f'=========== Script launch {__file__} ===========')
@@ -85,6 +86,8 @@ def write_to_postgres():
 
 
 if __name__ == '__main__':
+    start = time.time()
     write_to_postgres()
-
+    end = time.time()
     logging.info(f'=========== Script end {__file__} ===========')
+    print((end - start), "sec")
