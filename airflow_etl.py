@@ -2,6 +2,7 @@ from datetime import datetime, timedelta
 import pandas as pd
 import psycopg2
 import requests
+import yaml
 from airflow.models import DAG
 from airflow.operators.python import PythonOperator
 import logging
@@ -17,6 +18,17 @@ args = {
     'retry_delay': timedelta(days=1),
     'schedule_interval': '@daily',
 }
+
+setting = 'setting.yaml'
+
+with open(f'{setting}', encoding='utf-8') as f:
+    setting = yaml.safe_load(f)
+
+database_postgres = setting['DB']['DATABASE']
+user_postgres = setting['DB']['USER']
+password_postgres = setting['DB']['PASSWORD']
+host_postgres = setting['DB']['HOST']
+port_postgres = setting['DB']['PORT']
 
 time_log = datetime.now().strftime("%Y-%m-%d")
 path_log = Path("logs", time_log + "_airflow_etl_log.log")
@@ -73,12 +85,11 @@ def write_to_postgres():
     """
     df = request_from_service()
     con = psycopg2.connect(
-        database="postgres",
-        user="postgres",
-        password="0196",
-        host="127.0.0.1",
-        port="5432"
-    )
+        database=database_postgres,
+        user=user_postgres,
+        password=password_postgres,
+        host=host_postgres,
+        port=port_postgres
     try:
         print("Database opened successfully")
         cur = con.cursor()
