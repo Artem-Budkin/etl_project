@@ -51,6 +51,7 @@ def create_table_sql():
 
 # create_table_sql()
 
+
 # Part SQL query
 SQL_1_date_city = """
     select 
@@ -72,6 +73,16 @@ SQL_2_date_device = """
     from event
     group by date_e 
     order by date_e ;
+"""
+
+
+SQL_2_date_device_alter = """
+    select 
+        city_e as city,
+        count(device_e) filter(where device_e = 'MOBILE') as mobile,
+        count(device_e) filter(where device_e = 'DESKTOP') as desktop
+    from event
+    group by city_e ;
 """
 
 
